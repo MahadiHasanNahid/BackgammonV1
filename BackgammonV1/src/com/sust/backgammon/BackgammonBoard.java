@@ -39,6 +39,8 @@ public class BackgammonBoard implements Cloneable {
     public static int BAR_LOC1 = -1;
     // Set use_doubles to false if you would like to turn off the quadruple moves for testing.
     public static boolean use_doubles = true;
+    
+    @Override
     protected Object clone() {
         BackgammonBoard b = null;
         try {
