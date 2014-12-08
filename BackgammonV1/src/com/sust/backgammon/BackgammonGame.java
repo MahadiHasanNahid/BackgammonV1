@@ -19,7 +19,7 @@ public class BackgammonGame {
     // Time taken by each agent, in milliseconds.
     long time0, time1;
 	
-    BackgammonGame() {
+    public BackgammonGame() {
 	agent0 = new SimpleBackgammonAgent(0);
 	agent1 = new SimpleBackgammonAgent(1);
 
@@ -28,7 +28,7 @@ public class BackgammonGame {
 	d = new Dice();
     }
 
-    BackgammonGame(BackgammonAgent a0, BackgammonAgent a1, PrintStream ps) {
+    public BackgammonGame(BackgammonAgent a0, BackgammonAgent a1, PrintStream ps) {
 	agent0 = a0;
 	agent1 = a1;
 
