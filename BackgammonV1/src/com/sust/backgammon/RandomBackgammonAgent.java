@@ -19,6 +19,7 @@ public class RandomBackgammonAgent extends BackgammonAgent {
 	generator = new Random();
     }
 	
+    @Override
     public Move chooseMove(BackgammonBoard b) {
 	MoveSet ms = b.getValidMoves(player_num);
 	if (ms.getSize() > 0) {

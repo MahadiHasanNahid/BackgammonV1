@@ -16,6 +16,7 @@ public class UserBackgammonAgent extends BackgammonAgent {
 	super(my_player_num);
     }
 	
+    @Override
     public Move chooseMove(BackgammonBoard b)
     {
 	MoveSet ms = b.getValidMoves(player_num);

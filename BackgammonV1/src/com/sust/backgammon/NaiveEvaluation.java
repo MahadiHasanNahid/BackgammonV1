@@ -15,6 +15,7 @@ public class NaiveEvaluation extends Evaluation {
 	MIN_SCORE = 0;
     }
 
+    @Override
     public float boardScore(BackgammonBoard b, int player) {
 	return (float) b.in_home[player];
     }

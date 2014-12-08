@@ -12,6 +12,8 @@ import java.util.*;
 // A Move consists of a series of AtomicMoves (usually 2 of them, but could be any number from 1 to 4).
 public class Move implements Cloneable{
     private Vector moves;
+    
+    @Override
     protected Object clone() {
 	Move m = null;
 	try {
@@ -105,6 +107,7 @@ public class Move implements Cloneable{
 	}
     }
 
+    @Override
     public boolean equals(Object o) {
 	if ( this == o ) {
 	    return true;
